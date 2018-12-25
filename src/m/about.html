@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>中玺九合</title>
+  <!-- 判断是手机还是pc -->
+  <script>
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+            "SymbianOS", "Windows Phone",
+            "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
+    if (IsPC()) {
+        // 跳转到电脑板的网址
+        window.location.href = '../join.html';
+    }
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=750,target-densitydpi=320,inital-scale=2.0,maximum-scale=1.0,user-scalable=no;" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="js/index.js"></script>
+  <style>
+      p { max-height: 999999px; } </style>
+</head>
+<body>
+    <body>
+        <button class="navbar-toggler btn-blur" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container about content">
+            <div class="join" >
+                <h1 style="margin-bottom:50px;">ABOUT US</h1>
+            </div>
+            <div class="us">
+              <p>“还有这一套！”</p>
+              <p class="em">因为我们信仰时效的美学、创意和技术。</p>
+              <p>“还是你们细心！”</p>
+              <p class="em">因为我们坚持认为服务第一。</p>
+              <p>“这个都能做！”</p>
+              <p class="em">因为我们是每天都在进化的实干型创业家。</p>
+            </div>
+            <div class="des">
+              <h2>汇思·至臻，创新和美无止境 </h2>
+              <h2 class="en">Idea to ideals. </h2>
+              <p >十一年来，我们从未停歇，精进专业能力。</p>
+              <p>汇思，至臻，创新和美无止境。</p>
+              <p>中玺九合成立于2007年，是专业的品牌策划、设计与传播公司。</p>
+              <p>我们的服务包括品牌策略、品牌视觉创意、品牌线上解决方案、传播推广、线上营销。</p>
+              <p>十一年来，我们结识了众多合作伙伴，并与客户一起成长。</p>
+              <p>我们为中宣部、文化部、国家大剧院、国家图书馆、鸟巢文化中心等权威机构创作了大量品牌创意和宣传作品。</p>
+              <p>我们为丰田中国、雷克萨斯、本田、奥迪等国际品牌策划执行过大量品牌创意和线上营销活动。</p>
+              <p>我们为VIVO、万达传媒、全日空航空、捷信金融等行业枭楚提供过多次活动和营销创意服务。</p>
+              <p>合作伙伴的信任是我们前进的动力。秉承汇思、至臻的企业精神，我们致力为由雄心的民族品牌提供专业品牌传播服务。</p>
+            </div>
+        </div>
+        <div class="return"><a href="index.html">
+            <img src="img/return.png" alt=""></a>
+        </div>
+ <section class="elastic-layer close1">
+            <div class="login-panel">
+                <nav class="navbar navbar-expand-md cf ">
+                    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                            <!-- <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                          <a class="nav-link " href="../index.html"><span>01</span>HOME</a>
+                                     </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="work.html"><span>02</span>WORK</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link active" href="about.html"><span>03</span>ABOUT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="client.html"><span>04</span>CLIENT</a>
+                                    </li> 
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="join.html"><span>05</span>JOIN</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="contact.html"><span>06</span>CONTACT</a>
+                                    </li>       
+                                  </ul> -->
+                                  <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="../index.html">HOME<span>首页</span></a>
+                                      </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="../work.html">WORK<span>项目</span></a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                      <a class="nav-link active" href="../about.html">ABOUT<span>关于我们</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="../client.html">CLIENT<span>合作伙伴</span></a>
+                                    </li> 
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="../join.html">JOIN<span>加入我们</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="../contact.html">CONTACT<span>联系我们</span></a>
+                                    </li>       
+                                  </ul>
+                      <a href="javascript:;" class="close"><img src="img/close.png" alt=""></a>
+                    </div> 
+                  </nav>
+            </div>  
+</section>
+    </body>
+
+</body>
+</html>

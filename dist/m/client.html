@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>中玺九合</title>
+  <!-- 判断是手机还是pc -->
+  <script>
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+            "SymbianOS", "Windows Phone",
+            "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
+    if (IsPC()) {
+        // 跳转到电脑板的网址
+        window.location.href = '../client.html';
+    }
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=750,target-densitydpi=320,inital-scale=2.0,maximum-scale=1.0,user-scalable=no;" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+    <button class="navbar-toggler btn-blur" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <section class="elastic-layer close1">
+        <div class="login-panel">
+            <nav class="navbar navbar-expand-md cf ">
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <!-- <ul class="navbar-nav">
+                        <li class="nav-item">
+                              <a class="nav-link " href="../index.html"><span>01</span>HOME</a>
+                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="work.html"><span>02</span>WORK</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="about.html"><span>03</span>ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="client.html"><span>04</span>CLIENT</a>
+                        </li> 
+                        <li class="nav-item">
+                          <a class="nav-link " href="join.html"><span>05</span>JOIN</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="contact.html"><span>06</span>CONTACT</a>
+                        </li>       
+                      </ul> -->
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="../index.html">HOME<span>首页</span></a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="../work.html">WORK<span>项目</span></a>
+                        </li>
+                        <li class="nav-item  ">
+                          <a class="nav-link " href="../about.html">ABOUT<span>关于我们</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="../client.html">CLIENT<span>合作伙伴</span></a>
+                        </li> 
+                        <li class="nav-item">
+                          <a class="nav-link " href="../join.html">JOIN<span>加入我们</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="../contact.html">CONTACT<span>联系我们</span></a>
+                        </li>       
+                      </ul>
+                  <a href="javascript:;" class="close"><img src="img/close.png" alt=""></a>
+                </div> 
+              </nav>
+        </div>  
+</section>
+<div class="container client content">
+    <div class="join" >
+        <h1>CLIENT</h1>
+    </div>
+    <ul class="client1 cf">
+        <li><img src="../img/c1.png" alt=""></li>
+        <li><img src="../img/c2.png" alt=""></li>
+        <li><img src="../img/c3.png" alt=""></li>
+        <li><img src="../img/c4.png" alt=""></li>
+        <li><img src="../img/c5.png" alt=""></li>
+        <li><img src="../img/c6.png" alt=""></li>
+        <li><img src="../img/c7.png" alt=""></li>
+        <li><img src="../img/c8.png" alt=""></li>
+        <li><img src="../img/c9.png" alt=""></li>
+        <li><img src="../img/c10.png" alt=""></li>
+        <li><img src="../img/c11.png" alt=""></li>
+        <li><img src="../img/c12.png" alt=""></li>
+        <li><img src="../img/c13.png" alt=""></li>
+        <li><img src="../img/c14.png" alt=""></li>
+        <li><img src="../img/c15.png" alt=""></li>
+        <li><img src="../img/c16.png" alt=""></li>
+        <li><img src="../img/c17.png" alt=""></li>
+        <li><img src="../img/c18.png" alt=""></li>
+        <li><img src="../img/c19.png" alt=""></li>
+        <li><img src="../img/c20.png" alt=""></li>
+        <li><img src="../img/c21.png" alt=""></li>
+        <li><img src="../img/c22.png" alt=""></li>
+        <li><img src="../img/c23.png" alt=""></li>
+        <li><img src="../img/c24.png" alt=""></li>
+        <li><img src="../img/c25.png" alt=""></li>
+        <li><img src="../img/c26.png" alt=""></li>
+        <li><img src="../img/c27.png" alt=""></li>
+        <li><img src="../img/c28.png" alt=""></li>
+      </ul>
+</div>
+<div class="return"><a href="index.html">
+    <img src="img/return.png" alt=""></a>
+  </div>
+<!-- <div class="footer">
+  <p class="pf">@2018 Beijing</p>
+</div> -->
+</body>
+</html>

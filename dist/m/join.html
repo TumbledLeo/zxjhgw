@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>中玺九合</title>
+  <!-- 判断是手机还是pc -->
+  <script>
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+            "SymbianOS", "Windows Phone",
+            "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
+    if (IsPC()) {
+        // 跳转到电脑板的网址
+        window.location.href = '../join.html';
+    }
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=750,target-densitydpi=320,inital-scale=2.0,maximum-scale=1.0,user-scalable=no;" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+    <button class="navbar-toggler btn-blur" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <section class="elastic-layer close1">
+        <div class="login-panel">
+            <nav class="navbar navbar-expand-md cf ">
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <!-- <ul class="navbar-nav">
+                        <li class="nav-item">
+                              <a class="nav-link " href="../index.html"><span>01</span>HOME</a>
+                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="work.html"><span>02</span>WORK</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="about.html"><span>03</span>ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="client.html"><span>04</span>CLIENT</a>
+                        </li> 
+                        <li class="nav-item">
+                          <a class="nav-link active" href="join.html"><span>05</span>JOIN</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html"><span>06</span>CONTACT</a>
+                        </li>       
+                      </ul> -->
+
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="../index.html">HOME<span>首页</span></a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="../work.html">WORK<span>项目</span></a>
+                        </li>
+                        <li class="nav-item  ">
+                          <a class="nav-link " href="../about.html">ABOUT<span>关于我们</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../client.html">CLIENT<span>合作伙伴</span></a>
+                        </li> 
+                        <li class="nav-item">
+                          <a class="nav-link active" href="../join.html">JOIN<span>加入我们</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="../contact.html">CONTACT<span>联系我们</span></a>
+                        </li>       
+                      </ul>
+                  <a href="javascript:;" class="close"><img src="img/close.png" alt=""></a>
+                </div> 
+              </nav>
+        </div>  
+</section>
+<div class="container about content">
+    <div class="join" >
+        <h1>JOIN</h1>
+    </div>
+    <div class="content joinn">
+      <h2>初心 Enthusiasm</h2>
+      <h3>热爱</h3>
+      <p>每一次改稿，加班，绞尽脑汁，那都是我们，不与人言的热爱。</p>
+      <h3>好玩</h3>
+      <p>所谓“创作”，所谓“获得感”，直白的说法可不就是“好玩儿”。</p>
+      <h3>靠谱</h3>
+      <p>靠谱是团队的生存之本!<br/>
+          我们高质量的服务都需要和靠谱的人共同建立。</p>
+      <!-- <p style="margin-top:70px;text-align: center;"><img  src="../img/contact.png" alt=""></p> -->
+      <div class="a">
+        <!-- <a href="#"><img src="img/boss.png" alt=""><p>Boss直聘</p></a>
+        <a href="#"><img src="img/wx.png" alt=""><p>微信</p></a> -->
+          <h2>欢迎加入九合</h2>
+          <p>关注九合在boss直聘上的职位信息，<br/>
+              查看在招工作职位</p>
+        <a href="" class="boss">Boss直聘</a>
+        <h2>其他合作形式</h2>
+          <p>我们乐于与freelancer、独立工作室等<br/>
+              建立长期合作关系，欢迎联系我们</p>
+        <a href="" class="weixin">微信</a>
+      </div>
+    </div>
+</div>
+<div class="return"><a href="index.html">
+    <img src="img/return.png" alt=""></a>
+  </div>
+<!-- <div class="footer">
+  <p class="pf">@2018 Beijing</p>
+</div> -->
+</body>
+</html>

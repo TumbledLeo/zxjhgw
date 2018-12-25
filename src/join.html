@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>中玺九合</title>
+  <!-- 判断是手机还是pc-->
+  <script>
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+            "SymbianOS", "Windows Phone",
+            "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
+    if (!IsPC()) {
+        window.location.href = 'm/join.html';//  这是手机版网址
+    }
+</script> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <!-- bootsrap扩展功能需要的插件<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script> -->
+  <script src="lib/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="hed">
+    <nav class="navbar navbar-expand-md cf ">
+        <!-- <a class="navbar-brand" href="#" style=""><img src="./img/logo.png" alt=""></a> -->
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item ">
+                  <a class="nav-link" href="index.html">HOME</a>
+                </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="work.html">WORK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="client.html">CLIENT</a>
+            </li> 
+            <li class="nav-item  active">
+              <a class="nav-link" href="join.html">JOIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>            
+          </ul>
+        </div> 
+      </nav>
+</div><div class="hed">
+  <nav class="navbar navbar-expand-md cf ">
+      <!-- <a class="navbar-brand" href="#" style=""><img src="./img/logo.png" alt=""></a> -->
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="work.html">WORK</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="client.html">CLIENT</a>
+          </li> 
+          <li class="nav-item  active">
+            <a class="nav-link active" href="join.html">JOIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>            
+        </ul>
+      </div> 
+    </nav>
+</div>
+    
+<div class="container-1">
+  <div class="join">
+    <h1>JOIN</h1>
+    <!-- <h2>团结稳定的策划和设计团队</h2>
+    <p>稳定的团队是中玺九合在品牌创意行业的生存之本，人才的忠诚和<br/>稳定使我们能够长期的默契合作，是高质量的服务和创意的保障。</p>
+    <p style="margin-top:70px;"><img  src="img/contact.png" alt=""></p> -->
+
+    <div class="des">
+      <h4>初心 Enthusiasm</h4>
+      <ul class="test">
+        <li>
+          <h3>热爱</h3>
+          <p>每一次改稿，加班，绞尽脑汁，那都是我们，不与人言的热爱。</p>
+        </li>
+        <li>
+          <h3>好玩</h3>
+          <p>所谓“创作”，所谓“获得感”，直白的说法可不就是“好玩儿”。</p>
+        </li>
+        <li>
+          <h3>靠谱</h3>
+          <p>靠谱是我们的生存之本！和靠谱的人共靠谱的事。</p>
+        </li>
+      </ul>
+      <div class="more">
+          <h4>欢迎加入九合</h4>
+          <p>关注九合在boss直聘上的职位信息，查看在招工作职位</p>
+          <div class="a">
+            <a href="" class="boss">Boss直聘</a>
+          </div>
+      </div>
+      <div class="more">
+          <h4>其他合作形式</h4>
+          <p>我们乐于与freelancer、独立工作室等建立长期合作关系，欢迎联系我们</p>
+          <div class="a">
+            <a href="" class="weixin">微信</a>
+          </div>
+      </div>
+    </div>
+    
+    <!-- <div class="a"> -->
+<!--       
+      <a href="#"><img src="img/boss.png" alt=""><p>Boss直聘</p></a>
+      <a href="#"><img src="img/wx.png" alt=""><p>微信</p></a> -->
+      <!-- <a href="" class="boss">Boss直聘</a>
+      <a href="" class="weixin">微信</a>
+    </div> -->
+  </div>
+</div>
+<!-- <div class="footer"> 
+  <p class="pf"><span>@2018 Beijing</span></p>
+</div> -->
+<!-- <div class="home">
+    <a href="index.html">Back Home</a>
+</div> -->
+<div class="footer_w"> 
+  <p class="pf"><span>@2018 Beijing</span></p>
+</div>
+</body>
+</html>
