@@ -25,6 +25,7 @@
          url("../fonts/SourceHanSansCN-Regular.svg") format("svg"),
          url("../fonts/SourceHanSansCN-Regular.otf") format("opentype");
   }
+
 html{
     font-family:Arial,'SourceHanSansCN-Regular','Source Han Sans CN','Microsoft YaHei',sans-serif;
 }
@@ -375,10 +376,12 @@ margin-bottom:140px;
     margin-top:30px;
     line-height:26px;
     font-weight: bold;
+    font-family:SourceHanSansCN-Regular;
     span{
         font-size: 14px;
         color:#999999;
         margin-left:14px;
+        font-family:Arial;
     }
 }
 .work  li img{

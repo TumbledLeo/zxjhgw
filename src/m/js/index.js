@@ -59,6 +59,8 @@ $(function(){
       event.stopPropagation();
       $(this).css("display","noen");
       stop();
+       $("body,html").addClass('noscroll');
+        
   });
 
   $(".login-panel").on('click',function(){
@@ -70,6 +72,7 @@ $(function(){
       $('.elastic-layer').addClass('close1');
       $('.btn-blur').css("display","block");
       move();
+      $("body,html").removeClass('noscroll');
   });
   
 //实现滚动条无法滚动
