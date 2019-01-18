@@ -57,10 +57,13 @@ $(function(){
       $('.content').addClass('blur');
       $('.elastic-layer').removeClass('close1');
       event.stopPropagation();
-      $(this).css("display","noen");
+      $(this).css("display","none");
       stop();
-       $("body,html").addClass('noscroll');
-        
+     //  $("body,html").addClass('noscroll');
+
+       $('.elastic-layer').on('touchmove',function(){ 
+        　event.preventDefault(); 
+        });
   });
 
   $(".login-panel").on('click',function(){
@@ -72,7 +75,7 @@ $(function(){
       $('.elastic-layer').addClass('close1');
       $('.btn-blur').css("display","block");
       move();
-      $("body,html").removeClass('noscroll');
+    //  $("body,html").removeClass('noscroll');
   });
   
 //实现滚动条无法滚动
